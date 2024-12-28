@@ -1,12 +1,9 @@
 from lib.streamer import Streamer
 from configparser import ConfigParser
 from subprocess import Popen
-import time
 
 streams = ConfigParser()
 streams.read('conf/stream.ini')
-
-time.sleep(30)
 
 try:
     for item in streams.sections():
